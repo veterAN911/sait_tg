@@ -57,3 +57,24 @@ body {
 .answerButton:hover {
     background-color: #0056b3;
 }
+
+.result {
+    max-height: 100vh; /* Ограничиваем высоту элемента */
+    overflow-y: scroll; /* Включаем вертикальную прокрутку */
+    scrollbar-width: thin; /* Делаем скроллбар более узким для Firefox */
+    scrollbar-color: #333 #ccc; /* Цвет скроллбара и трека для Firefox */
+}
+
+/* Стили для скроллбара для Chrome, Safari и Edge */
+.result::-webkit-scrollbar {
+    width: 8px; /* Ширина скроллбара */
+}
+
+.result::-webkit-scrollbar-track {
+    background: #ccc; /* Цвет трека скроллбара */
+}
+
+.result::-webkit-scrollbar-thumb {
+    background-color: #333; /* Цвет скроллбара */
+    border-radius: 4px; /* Скругление углов скроллбара */
+}
